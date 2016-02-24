@@ -19,11 +19,11 @@ Package.on_use(function (api) {
 
   api.use('appcache', {weak: true});
 
-  api.add_files('lib/utils.js', 'client');
+  api.add_files('lib/utils.js');
   api.add_files('lib/state.js', 'client');
   api.add_files('lib/location.js', 'client');
 
-  api.export(['urlToHashStyle', 'urlFromHashStyle'], 'client', {testOnly: true});
+  api.export(['urlToHashStyle', 'urlFromHashStyle']);
 });
 
 Package.on_test(function (api) {
